@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookMark</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Montserrat:wght@400;800&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="book">
+        <div class="container first">
+            <div class="txt"><h1>Bookmarker</h1></div>
+        </div>
+        <div class="main text-center">
+            <h2> Bookmark your favorite sites </h2>
+        </div>
+        <div class="container sec">
+            <label class="mb-2"><i class="fa-solid fa-book" ></i> Site Name</label>
+            <input type="text" placeholder="Bookmark Name" id="bookname" class="w-100 form-control mb-4">
+            <label class="mb-2"><i class="fa-solid fa-link"></i>Site URL</label>
+            <input type="text" placeholder="Website URL" id="siteurl" class="w-100 form-control mb-4">
+            <button onclick="submiturl()" class="btn btn-danger text-white mb-3 px-5">Submit</button>
+        </div>
+        <div class="container th">
+            <table class="table table-hover mt-3 text-center">
+                <thead>
+                    <th>Index</th>
+                    <th>Website Name</th>
+                    <th>Visit</th>
+                    <th>Delete</th>
+                </thead>
+                <tbody id="demo">
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
